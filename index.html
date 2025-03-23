@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min's todolist</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./dist/script.js" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+        <header class="todo-container__header">
+            <h3>Min's TODO</h3>
+        </header>
+
+        <form 
+            id="todo_form"
+            class="todo-container__form">
+            <input 
+                id="todo_input"
+                class="todo-container__input" 
+                type="text"   
+                placeholder="오늘 할 일을 입력해주세요">
+            <button class="todo-container__button">
+                할 일 추가
+            </button>
+        </form>
+        <div class="render-container">
+            <section class="render-container__section">
+                <div class="render-container__title"> <h3>할 일</h3></div>
+
+                <ul 
+                    id="todo_list"
+                    class="render-container__list">
+                </ul>
+            </section>
+
+            <section class="render-container__section">
+
+                <div class="render-container__title"><h3>완료</h3></div>
+
+                <ul id="done_list"
+                    class="render-container__list">
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
